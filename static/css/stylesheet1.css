@@ -1,0 +1,37 @@
+img {
+	opacity: 0.7; 
+	}
+
+
+div:nth-child(4) {
+	background-color: blue;
+	opacity = 0.8
+	border-style: dotted;
+	margin: auto;
+	text-align: center;
+	width: 500px;
+	height: 500px;
+	border-left-style:dashed;
+	border-right-style:dashed;
+
+}
+
+h1 {
+	text-align: center;
+}
+
+#help {
+	text-align: center;
+	height: 20px; 
+	width: 5 px;
+}
+
+span {
+	color: green;
+	font-size: 15px;
+	font-style: Helvetica;
+}
+
+div {
+	text-align: center;
+}

@@ -1,0 +1,26 @@
+{% extends "search.html" %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Data</title>
+    </head>
+    {% block sentiment %}
+    <body>
+    <div class="row splash-page">
+            <div class="row">
+                <div class="medium-9 medium-centered column">
+                    <div class="panel">
+                        {% if score > 0 %}
+                            <h1>The sentiment towards this professor is {{score}} standard deviations above the average.</h1>
+                        {% else %}
+                            <h1>The sentiment towards this professor is {{score}} standard deviations below the average.</h1>
+                        {% endif %}
+                            <h3>"{{summary}}"</h3>
+                    </div>
+                </div>
+            </div>
+    </div>
+    {% endblock %}
+    </body>
+</html>

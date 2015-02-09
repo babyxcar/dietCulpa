@@ -1,0 +1,31 @@
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+
+body {
+    background-color: black;
+    /* feel free to use any image you want.  The url() function will take local or internet images */
+    background-image: url(http://i.imgur.com/sMUFuME.jpg?1);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+  	background-size: cover;
+}
+
+.splash-page {
+    margin-top: 10%;
+
+}
+.home-page .panel {
+	margin-top: 20%;
+	text-align: center;
+    background-color: rgba(242, 242, 242, 0.8);
+
+}
+
+.splash-page .panel {
+    text-align: center;
+    background-color: rgba(242, 242, 242, 0.8);
+}

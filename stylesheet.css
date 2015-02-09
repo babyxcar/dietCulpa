@@ -1,0 +1,14 @@
+div {
+	background-color: #CC33FF;
+	border-style: solid;
+	border-color: #FF33CC;
+	letter-spacing: 1pc; 
+	margin: auto;
+	text-align: center;
+}
+
+span {
+	color: red;
+	font-size: 15px;
+	font-style: Helvetica;
+}

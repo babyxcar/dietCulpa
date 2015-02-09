@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <link type ="text/css" rel="stylesheet" href="static/css/app.css"/>
+        <meta charset="utf-8">
+        {% block title %} 
+        dietCulpa
+        {% endblock %}
+    </head>
+    
+    <body>
+        {% block body %}
+    	<div class="row splash-page">
+            <div class="row">
+                <div class="medium-9 medium-centered column">
+                    <div class="panel">
+                        <h1>Search Professor Name</h1>
+                        <div id="help">
+                    	<form action="/search" method="post">
+                    		<input type="text" placeholder="Type in a Professor" name="user_search" required/>
+                        </div>
+                    		<div id ="yes">
+                            <button type="submit"> <span>Search</span> </button>
+                    		</div>
+                    	</form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% block sentiment %}{% endblock %}
+        {% block results %}{% endblock %}
+        {% endblock %}
+    </body>
+</html>

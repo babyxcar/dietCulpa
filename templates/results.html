@@ -1,0 +1,33 @@
+{% extends "search.html" %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Results</title>
+    </head>
+    {% block results %}
+    <body>
+    <div class="row splash-page">
+        <div class="row">
+            <div class="medium-9 medium-centered column">
+                <div class="panel">
+                        {% if api_data["professors"] %}
+                        	<ul>
+                    	    {% for repo in api_data["professors"] %}
+                    	   		<li>
+                    	       		<h5><a href={{ repo.id }}>{{ repo.first_name }} {{ repo.last_name }}</a></h5>
+                                    <h6>{{ repo.nugget }}</h6>
+                      			</li>
+                    		{% endfor %}
+                        	</ul>
+                        {% else %}
+                    	<p>This professor is not worthy of Culpa.</p>
+                    	{% endif %}
+                </div>
+            </div>
+        </div>
+    </div>   
+
+    {% endblock %}
+    </body>
+</html>
